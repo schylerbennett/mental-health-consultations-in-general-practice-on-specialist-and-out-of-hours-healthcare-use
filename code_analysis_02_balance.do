@@ -23,6 +23,7 @@ See data_dictionary file for more information on these and other variables
 version 19.5
 clear all
 set more off
+require using "requirements.txt", install
 
 * -----------------------------------------------------------------------------
 
