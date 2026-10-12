@@ -2,5 +2,6 @@
 require >= 1.3.1, from(ssc)
 reghdfe >= 6.12.5, from(ssc)
 ivreghdfe >= 1.1.3, from(ssc)
+ppmlhdfe >= 2.3.0, from(ssc)
 ftools >= 2.49.1, from(ssc)
 estout >= 3.31, from(ssc)
