@@ -66,7 +66,7 @@ reghdfe edu_cat instrument_var if rel_p==0, absorb(year_p0#new_gp_municipality p
 eststo b_edu
 
 *HEALTHCARE USE (in the year two years prior to assignment, called T-2)
-local hc_use ac_psych nac_psych_in nac_psych_out lgvkt_p ac_soma nac_soma_in nac_soma_out lgvkt_uten_p
+local hc_use ac_psych nac_psych_in nac_psych_out ooh_psych ac_soma nac_soma_in nac_soma_out ooh_soma
 
 
 *Healthcare use in T-2
@@ -75,7 +75,7 @@ foreach l of local hc_use {
 	eststo b_`l'2
 	}
 
-local balance b_pat_age b_edu b_ac_psych2 b_nac_psych_in2 b_nac_psych_out2 b_lgvkt_p2 b_ac_soma2 b_nac_soma_in2 b_nac_soma_out2 b_lgvkt_uten_p2
+local balance b_pat_age b_edu b_ac_psych2 b_nac_psych_in2 b_nac_psych_out2 b_ooh_psych2 b_ac_soma2 b_nac_soma_in2 b_nac_soma_out2 b_ooh_soma2
 
 foreach l of local balance {
 	esttab `l' using `output_file', cells("b t se p ci ci_l ci_u") drop(_cons) plain append
