@@ -13,6 +13,8 @@
 version 19.5
 clear all
 set more off
+require using "requirements.txt", install
+
 * -----------------------------------------------------------------------------
 
 **# USER INPUT (replace with relevant names/paths) ----------------------------
