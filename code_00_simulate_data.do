@@ -1,5 +1,5 @@
 ********************************************************************************
-* File: code_analysis_00_simulate_data.do
+* File: code_00_simulate_data.do
 * One row per person_id x rel_p (rel_p = 0, 1, 2)
 * Person-level variables are identical across all three observation rows,
 * only the outcomes and days_in_year_end_only vary by row.
